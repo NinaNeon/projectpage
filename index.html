@@ -371,7 +371,7 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Method Overview</h2>
     <div class="content">
-      <img src="static/images/method_overview.png" alt="Method Architecture" style="width:100%">
+      <img src="overview.png" alt="Method Architecture" style="width:100%">
       <p class="has-text-justified">
         Our framework comprises three key components: (1) An <strong>implicit captioner</strong> that encodes defect images into text embeddings when captions are unavailable, (2) A <strong>frozen diffusion U-Net</strong> (860M parameters) trained from scratch on IMDD-1M to extract multi-scale features, and (3) A <strong>Mask2Former generator</strong> (45M parameters) that predicts binary masks and embeddings for open-vocabulary classification. The model is trained in two stages: Stage 1 pre-trains the diffusion model on IMDD-1M for 100 epochs, and Stage 2 freezes the diffusion model and fine-tunes the mask generator on downstream tasks.
       </p>
